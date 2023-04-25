@@ -110,3 +110,18 @@ function baner_e()
 
 baner_d();
 baner_e();
+
+button = document.querySelector(".conteudo > button");
+button.addEventListener("click", () => {
+    img = document.querySelector(".conteudo > div > img");
+    if (button.innerText == "LIGAR")
+    {
+        img.src = "./img/pic_bulbon.gif"
+        button.innerText = "DELIGAR"
+    }
+    else if (button.innerText == "DELIGAR")
+    {
+        img.src = "../img/pic_bulboff.gif"
+        button.innerText = "LIGAR"
+    }
+})
