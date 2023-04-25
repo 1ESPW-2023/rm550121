@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    background-color: blue;
+    color: #fff;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60vh;
+
+}
+.conteudo{
+    flex-grow: 5;
+    background-color: blueviolet;
+}
+.l-e{
+    flex-grow: 1;
+    background-color: coral;
+    text-align: center;
+}
+.l-d{
+    flex-grow: 1;
+    /*background-color: crimson;*/
+    background-image: "../img/banner-lateral-1.png";
+    text-align: center;
+}
+.l-e img,
+.l-d img
+{
+    height: 100%;
+    width: 100%;
+}
+
+/* .rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    background-color: blue;
+    color: #fff;
+} */
