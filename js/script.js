@@ -35,9 +35,78 @@ function mudaCor()
 
     tmp = setTimeout(mudaCor, 100);
 }
-mudaCor()
+//mudaCor()
 
 function pararTimeout()
 {
     clearTimeout(tmp);
 }
+
+// REALIZAR O BANNER
+
+b = 1
+e = 1
+let tmp_b = 0;
+let tmp_e = 0;
+function baner_d()
+{
+    let url = "";
+    switch (b) {
+        case 1:
+            url = "./img/banner-lateral-1.png"
+            break;
+        case 2:
+            url = "./img/banner-lateral-2.png"
+            break;
+        case 3:
+            url = "./img/banner-lateral-3.png"
+            break;
+        default:
+            break;
+    }
+    // O SELETOR ACEITA O EFEITO CASCATA, PODENDO ACESSAR DIRETAMENTO OS ELEMENTOS FILHOS
+    baner = document.querySelector(".l-d > img");
+    baner.src = url;
+    if(b < 3)
+    {
+        b++;
+    }
+    else
+    {
+        b = 1;
+    }
+    tmp_b = setTimeout(baner_d, 2000);
+}
+
+function baner_e()
+{
+    let url = "";
+    switch (e) {
+        case 1:
+            url = "./img/banner-lateral-3.png"
+            break;
+        case 2:
+            url = "./img/banner-lateral-1.png"
+            break;
+        case 3:
+            url = "./img/banner-lateral-2.png"
+            break;
+        default:
+            break;
+    }
+
+    baner = document.querySelector(".l-e > img");
+    baner.src = url;
+    if(e < 3)
+    {
+        e++;
+    }
+    else
+    {
+        e = 1;
+    }
+    tmp_e = setTimeout(baner_e, 2000);
+}
+
+baner_d();
+baner_e();

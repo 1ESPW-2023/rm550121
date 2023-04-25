@@ -25,11 +25,21 @@
 .l-e{
     flex-grow: 1;
     background-color: coral;
+    text-align: center;
 }
 .l-d{
     flex-grow: 1;
-    background-color: crimson;
+    /*background-color: crimson;*/
+    background-image: "../img/banner-lateral-1.png";
+    text-align: center;
 }
+.l-e img,
+.l-d img
+{
+    height: 100%;
+    width: 100%;
+}
+
 /* .rodape{
     display: flex;
     justify-content: center;
