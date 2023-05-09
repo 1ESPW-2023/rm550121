@@ -121,7 +121,7 @@ button.addEventListener("click", () => {
     }
     else if (button.innerText == "DELIGAR")
     {
-        img.src = "../img/pic_bulboff.gif"
+        img.src = "./img/pic_bulboff.gif"
         button.innerText = "LIGAR"
     }
 })

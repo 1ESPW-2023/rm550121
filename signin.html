@@ -8,7 +8,7 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="./css/signin.css" />
-    <script src="./js/script.js" defer></script>
+    <script src="./js/signin.js" defer></script>
     <title>Singin</title>
   </head>
   <body>
@@ -20,14 +20,14 @@
         <div id="msgError"></div>
 
         <div class="label-float">
-          <input type="text" id="usuario" paceholder="" required />
+          <input type="text" name="Usuario" id="usuario" paceholder="" required />
           <label id="userLabel" for="usuario">Usuario</label>
         </div>
 
         <div class="label-float">
-          <input type="password" id="senha" paceholder="" required />
+          <input type="password" name="Password" id="senha" paceholder="" required />
           <label id="senhaLabel" for="senha">Senha</label>
-          <i class="fa fa-eye" aria-hidden="true"></i>
+          <i class="fa fa-eye-slash" id="eye" aria-hidden="true"></i>
         </div>
 
         <div class="justify-center">
