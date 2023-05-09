@@ -8,54 +8,6 @@ const btnEntrar = document.querySelector("button")
 
 btnEntrar.disabled = true; // O botão começa desabilitado para realizar o login
 
-// inputUsuario.addEventListener("change", () => {
-//     let usuarioValue = inputUsuario.value;
-//     if(usuarioValue.replaceAll(' ', '').length == 0){
-//         console.log("Usuario não pode ser vazio");
-//         throwErrorMensage("span","Usuario não pode ser vazio!!!",divLabels[0])
-//     }
-//     else if(usuarioValue.trim().includes(' '))
-//     {
-//         console.log("Usuario não pode conter espaços!!");
-//         throwErrorMensage("span","Usuario não pode conter espaços!!",divLabels[0])
-//     }
-//     else if(usuarioValue.trim().length < 8)
-//     {
-//         console.log("Usuario deve ter no minimo 8 caracteres");
-//         throwErrorMensage("span","Usuario deve ter no minimo 8 caracteres",divLabels[0])
-//     }
-//     else
-//     {
-//         console.log("Usuario esta dentro dos padrões");
-//         inputValid("Usuario OK",divLabels[0])
-//         UsuarioESenhaCorretos()
-//     }
-// })
-
-// inputSenha.addEventListener("change", () => {
-//     let senhaValue = inputSenha.value;
-//     if(senhaValue.replaceAll(' ', '').length == 0){
-//         console.log("Senha não pode ser vazia");
-//         throwErrorMensage("span","Senha não pode ser vazia!!",divLabels[1])
-//     }
-//     else if(usuarioValue.trim().includes(' '))
-//     {
-//         console.log("Senha não pode conter espaços!!");
-//         throwErrorMensage("span","Senha não pode conter espaços!!",divLabels[1])
-//     }
-//     else if(usuarioValue.trim().length < 8)
-//     {
-//         console.log("Senha deve ter no minimo 8 caracteres");
-//         throwErrorMensage("span","Senha deve ter no minimo 8 caracteres",divLabels[1])
-//     }
-//     else
-//     {
-//         console.log("Senha esta dentro dos padrões");
-//         inputValid("Senha OK",divLabels[1])
-//         UsuarioESenhaCorretos()
-//     }
-// })
-
 inputUsuario.divLabel = divLabels[0];
 inputUsuario.childMensagePosition = 2;
 inputUsuario.addEventListener("change", checkInput)
@@ -123,44 +75,6 @@ function throwMensagem(type, text, color, className, element, childPosition)
         element.children[childPosition].textContent = text
     }
 }
-
-// function throwErrorMensage(type, text, element)
-// {
-//     let mensagem = document.createElement(type);
-//     mensagem.innerHTML = text;
-//     mensagem.className = "error"
-//     mensagem.style.color = "Red"
-//     let children
-//     if(this.name == "Password")
-//         children = element.children[3]
-//     else
-//         children = element.children[2]
-//     if(children == undefined)
-//         element.appendChild(mensagem);
-//     else if(children.className != "error")
-//     {
-//         element.removeChild(children);
-//         element.appendChild(mensagem);
-//     }
-//     else
-//         children.textContent = text
-// }
-// function inputValid(text,element)
-// {
-//     let mensagem = document.createElement("span")
-//     mensagem.style.color = "Green"
-//     mensagem.className = "checked"
-//     mensagem.innerHTML = text
-//     if(element.children[2] == undefined)
-//         element.appendChild(mensagem);
-//     else if(element.children[2].className != "checked")
-//     {
-//         element.removeChild(element.children[2]);
-//         element.appendChild(mensagem);
-//     }
-//     else
-//         element.children[2].textContent = text
-// }
 
 function UsuarioESenhaCorretos()
 {
