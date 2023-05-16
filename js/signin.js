@@ -16,6 +16,32 @@ inputSenha.divLabel = divLabels[1];
 inputSenha.childMensagePosition = 3;
 inputSenha.addEventListener("change", checkInput)
 
+//Criando Objeto:
+let listaDeObjeto = [
+    {
+        nomeCompleto : "José da Silva",
+        nomeUsuario : "jose",
+        senhaUsuario: "123456"
+    },
+    {
+        nomeCompleto : "Paulo da Silva",
+        nomeUsuario : "paulo",
+        senhaUsuario: "123456"
+    },
+    {
+        nomeCompleto : "Maria da Silva",
+        nomeUsuario : "maria",
+        senhaUsuario: "123456"
+    },
+    {
+        nomeCompleto : "João da Silva",
+        nomeUsuario : "joao",
+        senhaUsuario: "123456"
+    }
+];
+
+localStorage.setItem("listaUser", JSON.stringify(listaDeObjeto));
+
 function checkInput()
 {
     let name = this.name;
