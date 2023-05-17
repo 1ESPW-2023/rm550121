@@ -19,8 +19,8 @@
 //     return dia + "/" + mes + "/" + ano;
 // }
 
-// getDate() = Dia do mês
-// getDay() = Dia da Semana (número)
+// getDate() = Dia do mês 
+// getDay() = Dia da Semana (0[Sabado] - 6 [Domingo])
 // getFu11Year() = Ano com 4 dígitos
 // getHours() = Horas
 // getMilliseconds() = Milisegundos
